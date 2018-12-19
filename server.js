@@ -21,13 +21,13 @@ mongoose.Promise = global.Promise; // fix for "DeprecationWarning: Mongoose: mpr
 // set envrioment variables if production is false
 if (process.env.NODE_ENV !== 'production') {
   process.env.url = 'http://localhost:3000/'; //  Development
-  process.env.db = 'mongodb://doctor:duggal77@ds113454.mlab.com:13454/doctors-portal'; // Development
+  process.env.db = 'mongodb://sherry:sherry 77@ds13454.mlab.com:13454/doctors-portal'; // Development
   process.env.jwtsecret = '$2a$06$GXmQiERBvYRGD91bIJLWRO2m4WGUpj7IRuSuve3pZ3B5rRtLIzm2G';
 }
 // database connection
 // =============================================================================
 // = ==========
-mongoose.connect(process.env.db,{
+mongoose.connect('mongodb://sherry:sheeraz 77@ds113454.mlab.com:13454/doctors-portal',{
     useMongoClient: true ,
     poolSize: 20,
     keepAlive: 300000,
